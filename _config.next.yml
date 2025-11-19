@@ -57,10 +57,10 @@ lightdark:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /favicon-16x16.png
-  medium: /favicon-32x32.png
-  apple_touch_icon: /favicon-32x32.png  # 如果没有专门的 Apple 图标，可以复用
-  safari_pinned_tab: /favicon.ico       # Safari 图标可以用 .ico 或 .svg
+  small: source/favicon-16x16.png
+  medium: source/favicon-32x32.png
+  apple_touch_icon: source/favicon-32x32.png  # 如果没有专门的 Apple 图标，可以复用
+  safari_pinned_tab: source/favicon.ico       # Safari 图标可以用 .ico 或 .svg
 # android_manifest: /manifest.json      # 如果你有 manifest 文件可以启用
 
 

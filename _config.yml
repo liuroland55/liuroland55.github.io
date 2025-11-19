@@ -7,8 +7,11 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Roland Liu
+language:
+  - zh-CN
+  - en
+
 timezone: ''
 
 # URL

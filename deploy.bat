@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion
 title Hexo 博客自动部署脚本
 
 echo ========================================
-echo    Hexo 博客自动部署工具 v2.0
+echo    Hexo 博客自动部署工具 v2.1
 echo ========================================
 echo.
 
@@ -75,11 +75,11 @@ REM 检查是否有暂存的更改
 git diff --cached --quiet
 if %errorlevel% equ 0 (
     echo [提示] 没有新的更改需要提交
-    goto :skip_commit
+    goto skip_commit
 )
 
 REM 获取当前时间作为提交信息
-for /f "tokens=1-3 delims=/ " %%a in ('date /t') do set mydate=%%a-%%b-%%c
+for /f "tokens=1-3 delims=/" %%a in ('date /t') do set mydate=%%a-%%b-%%c
 for /f "tokens=1-2 delims=:." %%a in ('time /t') do set mytime=%%a:%%b
 
 set commit_msg=博客更新 - %mydate% %mytime%
@@ -133,7 +133,7 @@ if %errorlevel% neq 0 (
 echo [√] 推送成功！
 echo.
 echo ========================================
-echo    🎉 博客已成功部署到 GitHub！
+echo    博客已成功部署到 GitHub！
 echo    访问: https://liuroland55.github.io
 echo ========================================
 echo.

@@ -1,8 +1,10 @@
 ﻿# Header-菜单
 menu:
   主页: /
-  技术笔记: https://zhousiwei.gitee.io/ibooks/
-  随笔: /tags/随笔/
+  项目工坊: /tags/项目工坊/
+  哲思随笔: /tags/哲思随笔/
+  写作与技艺: /tags/写作与技艺/
+  关于我: /about/
 
 # subNav-子导航
 subNav:

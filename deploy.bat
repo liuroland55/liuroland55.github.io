@@ -134,14 +134,18 @@ echo [√] 推送成功！
 echo.
 echo ========================================
 echo    博客已成功部署到 GitHub！
-echo    访问: https://liuroland55.github.io
+echo ========================================
+echo.
+echo 访问地址:
+echo https://liuroland55.github.io
+echo.
 echo ========================================
 echo.
 
 REM 询问是否打开网站
-choice /c yn /m "是否打开网站查看？[Y/N]"
-if %errorlevel% equ 1 (
-    start https://liuroland55.github.io
+set /p open_site="是否打开网站查看？[Y/N]: "
+if /i "%open_site%"=="Y" (
+    start "" https://liuroland55.github.io
 )
 
 echo.

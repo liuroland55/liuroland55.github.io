@@ -8,7 +8,7 @@ menu:
 
 # subNav-子导航
 subNav:
-  - github: "#"
+  - github: "https://github.com/liuroland55"
   - github: "#" # (支持设置多个)
   - gitee: "#" # 码云
   - jianshu: "#" #简书
@@ -34,7 +34,7 @@ subNav:
 hover_effect:
   ## `global` 0: Set separately, 1: Enable global 2: Close global
   ## `global` 0: 分开设置, 1: 全局启用, 2: 全局关闭
-  global: 2
+  global: 1
   # SubNav-导航
   subNav: true
 
@@ -64,7 +64,7 @@ open_in_new:
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
@@ -163,8 +163,8 @@ github:
 
 # 页脚 Litten(此配置项已弃用)
 # 帮助我们让更多人可以更方便使用Hexo，请尽量不要修改此主题配置
-pageFooter:
-  litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>
+#pageFooter:
+#  litten: GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a>
 
 # 开启百度站长平台自动推送(https://ziyuan.baidu.com/linksubmit/index)
 baidu_push: false
@@ -176,7 +176,7 @@ copyright_type: 2
 copyright_text: 
 
 # 网站成立年份(默认为 2018，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2018
+since: 2025
 
 # Progress Bar | 页面加载进度条
 # Demo: http://github.hubspot.com/pace/docs/welcome/
@@ -272,4 +272,4 @@ friends:
     url: https://github.com/liuroland55
 
 # 关于我
-aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+#aboutme: 主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家

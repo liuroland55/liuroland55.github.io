@@ -5,11 +5,13 @@ menu:
   哲思随笔: /tags/哲思随笔/
   写作与技艺: /tags/写作与技艺/
   关于我: /about/
+  技术笔记: false
+  随笔: false
 
 # subNav-子导航
 subNav:
   - github: "https://github.com/liuroland55"
-  - github: "#" # (支持设置多个)
+  # - github: "#" # (支持设置多个)
   - gitee: "#" # 码云
   - jianshu: "#" #简书
   # - cnblog: "#"

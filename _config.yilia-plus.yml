@@ -2,11 +2,10 @@
 menu:
   主页: /
   项目工坊: /tags/项目工坊/
-  哲思随笔: /tags/哲思随笔/
   写作与技艺: /tags/写作与技艺/
   关于我: /about/
-  技术笔记: false
-  随笔: false
+  技术笔记: /tags/技术笔记
+  随笔: /tags/哲思随笔/
 
 # subNav-子导航
 subNav:

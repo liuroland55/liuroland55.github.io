@@ -8,4 +8,18 @@
     Oauthcallback();
   </script>
 <% } %>
+
+<% if (theme.busuanzi && theme.busuanzi.enable && theme.busuanzi.site_visit){ %>
+<div class="site-visit-info" style="text-align: center; padding: 20px 0; margin-bottom: 20px; border-bottom: 1px solid #eee;">
+  <span style="margin: 0 15px;">
+    <i class="icon-eye icon"></i> 
+    本站总访问量：<span id="busuanzi_value_site_pv" style="font-weight: bold; color: #555;"></span> 次
+  </span>
+  <span style="margin: 0 15px;">
+    <i class="icon-user icon"></i> 
+    本站访客数：<span id="busuanzi_value_site_uv" style="font-weight: bold; color: #555;"></span> 人
+  </span>
+</div>
+<% } %>
+
 <%- partial('_partial/archive', {pagination: 2, index: true}) %>

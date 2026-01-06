@@ -13,13 +13,55 @@
 <div class="site-visit-info" style="text-align: center; padding: 20px 0; margin-bottom: 20px; border-bottom: 1px solid #eee;">
   <span style="margin: 0 15px;">
     <i class="icon-eye icon"></i> 
-    本站总访问量：<span style="font-weight: bold; color: #555;">16775</span> 次
+    本站总访问量：<span id="busuanzi_value_site_pv" style="font-weight: bold; color: #555;">加载中...</span> 次
   </span>
   <span style="margin: 0 15px;">
     <i class="icon-user icon"></i> 
-    本站访客数：<span style="font-weight: bold; color: #555;">6123</span> 人
+    本站访客数：<span id="busuanzi_value_site_uv" style="font-weight: bold; color: #555;">加载中...</span> 人
   </span>
 </div>
+
+<script>
+(function() {
+  // 基础值
+  const basePV = 16775;
+  const baseUV = 6123;
+  
+  // 等待不蒜子加载完成并更新显示
+  function updateDisplay() {
+    const busuanziPV = document.getElementById('busuanzi_value_site_pv');
+    const busuanziUV = document.getElementById('busuanzi_value_site_uv');
+    
+    if (busuanziPV && busuanziUV) {
+      const currentPV = parseInt(busuanziPV.textContent) || 0;
+      const currentUV = parseInt(busuanziUV.textContent) || 0;
+      
+      // 计算偏移量
+      const offsetPV = currentPV - 0; // 不蒜子初始值
+      const offsetUV = currentUV - 0;
+      
+      // 显示最终值
+      busuanziPV.textContent = basePV + offsetPV;
+      busuanziUV.textContent = baseUV + offsetUV;
+    }
+  }
+  
+  // 定期检查不蒜子是否加载完成（最多尝试 100 次，每次间隔 50ms）
+  let attempts = 0;
+  const checkInterval = setInterval(function() {
+    const busuanziPV = document.getElementById('busuanzi_value_site_pv');
+    if (busuanziPV && busuanziPV.textContent !== '加载中...' && busuanziPV.textContent !== '') {
+      clearInterval(checkInterval);
+      // 等待一小段时间确保数据完全加载
+      setTimeout(updateDisplay, 500);
+    }
+    attempts++;
+    if (attempts >= 100) {
+      clearInterval(checkInterval);
+    }
+  }, 50);
+})();
+</script>
 <% } %>
 
 <%- partial('_partial/archive', {pagination: 2, index: true}) %>

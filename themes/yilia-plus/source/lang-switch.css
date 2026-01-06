@@ -1,0 +1,58 @@
+/* Language Switch Styles */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  text-decoration: none;
+  color: #666;
+  border-radius: 4px;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.lang-btn:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.lang-btn.active {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.lang-btn span:first-child {
+  font-size: 1.2em;
+}
+
+.lang-divider {
+  color: #ccc;
+  margin: 0 8px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .lang-switch {
+    margin-right: 10px;
+  }
+  
+  .lang-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  
+  .lang-btn span:first-child {
+    font-size: 1em;
+  }
+  
+  .lang-divider {
+    margin: 0 4px;
+  }
+}

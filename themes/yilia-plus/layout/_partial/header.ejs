@@ -19,6 +19,18 @@
         <% } %>
       </nav>
       <nav id="sub-nav">
+        <div class="lang-switch">
+          <a href="/cn/" class="lang-btn <%= page.lang === 'cn' ? 'active' : '' %>">
+            <span>🇨🇳</span>
+            <span>中文</span>
+          </a>
+          <span class="lang-divider">|</span>
+          <a href="/en/" class="lang-btn <%= page.lang === 'en' ? 'active' : '' %>">
+            <span>🇬🇧</span>
+            <span>English</span>
+          </a>
+        </div>
+        
         <% if (theme.rss){ %>
           <a id="nav-rss-link" class="nav-icon" href="<%- url_for(theme.rss) %>" title="RSS Feed"></a>
         <% } %>

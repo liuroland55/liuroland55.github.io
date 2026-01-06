@@ -14,8 +14,22 @@
     <div id="header-inner" class="inner">
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
+        <% 
+          // 检测当前语言
+          var isEnglish = page.path && page.path.startsWith('en/');
+          
+          // 菜单翻译映射
+          var menuTranslations = {
+            '主页': 'Home',
+            '项目工坊': 'Project Workshop',
+            '写作与技艺': 'Writing Craft',
+            '关于我': 'About Me',
+            '技术笔记': 'Tech Notes',
+            '随笔': 'Essays'
+          };
+        %>
         <% for (var i in theme.menu){ %>
-          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= isEnglish && menuTranslations[i] ? menuTranslations[i] : i %></a>
         <% } %>
       </nav>
       <nav id="sub-nav">

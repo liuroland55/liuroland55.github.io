@@ -9,6 +9,12 @@
   </script>
 <% } %>
 
+<% if (page.body) { %>
+  <div class="lang-selection-wrapper">
+    <%- body %>
+  </div>
+<% } %>
+
 <% if (theme.busuanzi && theme.busuanzi.enable && theme.busuanzi.site_visit){ %>
 <div class="site-visit-info" style="text-align: center; padding: 20px 0; margin-bottom: 20px; border-bottom: 1px solid #eee;">
   <span style="margin: 0 15px;">

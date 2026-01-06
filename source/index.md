@@ -1,6 +1,6 @@
 ---
 title: Language Selection
-layout: index
+layout: page
 ---
 
 <div class="lang-selection-container">
